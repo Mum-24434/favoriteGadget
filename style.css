@@ -107,9 +107,11 @@ section{
 #hero-section h1{
     font-size: 2rem;
     font-weight: bolder;
+    text-align: center;
 }
 #hero-section p{
     font-weight: bold;
+    text-align: center;
 }
 #hero-section a{
     text-decoration: none;
@@ -219,6 +221,7 @@ section{
 #verify{
     display: flex;
     justify-self: flex-end;
+    
 }
 #map-section h3{
     text-align: center;
@@ -229,6 +232,10 @@ section{
      color: white;
      line-height: 1.6;
      padding: 15px 30px;
+     width: 95%;
+     margin: auto;
+     padding: 5px 10px;
+     
 }
 #contact-section h2{
     text-align: center;
@@ -241,6 +248,7 @@ section{
 #contact-section a:hover{
     color: var(--links);
 }
+
 form input, textarea{
     display: block;
     width: 90%;
@@ -281,15 +289,33 @@ footer{
     color: #ffffff;
     
 }
-#left-content{
-    
+#footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 10px;
+    line-height: 1.6;
 }
 footer ul{
     list-style: none;
     
 }
-footer ul a{
+footer i{
+    padding-right: 10px;
+    color: var(--text-color2);
+}
+footer a{
     color: var(--links);
+}
+footer a:hover{
+    color: var(--links-hover);
+}
+#right-content ul{
+    list-style: none;
+}
+#right-content ul a{
+    line-height: 2.5;
+    text-align: center;
 }
 
 
