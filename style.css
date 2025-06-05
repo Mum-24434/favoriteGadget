@@ -230,15 +230,7 @@ section{
     display: flex;
     justify-self: flex-end;
     transform: skewY(2deg);
-    animation: animate 50s linear infinite ;
-}
-@keyframes animate{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+    
 }
 #map-section h3{
     text-align: center;
@@ -371,6 +363,23 @@ footer a:hover{
     to{
         transform: rotate(360deg);
     }
+}
+#scroll{
+    display: flex;
+    justify-self: center;
+    color: var(--text-color);
+    background-color: var(--main-bg);
+    border: none;
+    padding: 10px;
+    margin-block-end: 10px;
+    border-radius: 10px;
+}
+#scroll:hover{
+    background-color: var(--BUTTON-hover);
+    color: var(--links);
+    transform: scale(1.01);
+    border: solid 2px var(--text-color);
+    
 }
 #bottom{
     background-color: var(--links);
