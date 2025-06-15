@@ -106,7 +106,7 @@ nav a:hover{
     font-weight: bold;
     
 }
-@media(max-width:400px){
+@media(max-width:450px){
     #call-to-order{
         padding-top: 210px;
     }
