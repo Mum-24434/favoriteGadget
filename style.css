@@ -106,9 +106,9 @@ nav a:hover{
     font-weight: bold;
     
 }
-@media(max-width:450px){
+@media(max-width:768px){
     #call-to-order{
-        padding-top: 210px;
+        padding-top: 200px;
     }
 }
 section{
