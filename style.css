@@ -38,6 +38,18 @@ header{
     align-items: center;
     flex-wrap: wrap;
     background-color: var(--header-bg);
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    border-bottom:solid 2px var(--text-color);
+    
+}
+header:hover{
+      background: linear-gradient(to right, #081A36, #000000);
+}
+header img:hover{
+    transform: scaleX(1.05);
+    transition: 0.3s ease-in-out;
 }
 
 header nav ul{
@@ -90,7 +102,7 @@ nav a:hover{
     background-color:  #28a745;
     color: var(--text-color2);
     text-align: center;
-    padding: 1px 0;
+    padding: 150px 0 1px 0;
     font-weight: bold;
     
 }
@@ -131,7 +143,7 @@ section{
 }
 #hero-section a:hover{
     background-color: var(--BUTTON-hover);
-    transform: translateY(-4px);
+    transform: scaleX(1.05);
     transition: all 0.3s ease-in-out;
     border-bottom: 5px solid green;
 }
@@ -147,6 +159,7 @@ section{
     overflow-x: scroll;
     text-align: center;
     line-height: 1.6;
+    
 }
 #product-section{
     background-color: #f7f9fb;
@@ -164,6 +177,17 @@ section{
 .the-product{
     padding: 20px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+.the-product img:hover{
+    animation: animate3 2s ease-in-out;
+}
+@keyframes animate3{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
 }
 .the-product h2{
     color: var(--header-bg);
@@ -195,10 +219,18 @@ section{
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
      width: 70%;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     border-bottom:5px solid var(--header-bg);
     line-height: 1.6;
+    border-radius: 50%;
+   
+}
+.service:hover{
+    border-bottom: none;
+    border-top: 5px solid var(--header-bg);
+    transition:  ease-in-out;
+    transform: scaleX(1.02);
 }
 .service h2{
     color: var(--header-bg);
@@ -245,6 +277,7 @@ section{
      margin: auto;
      padding: 5px 10px;
      
+     
 }
 #contact-section h2{
     text-align: center;
@@ -277,6 +310,7 @@ form button{
    padding: 15px;
    border: none;
    border-radius: 5px;
+   cursor: pointer;
 }
 form button:hover{
   background-color: #002f6c;
@@ -373,6 +407,7 @@ footer a:hover{
     padding: 10px;
     margin-block-end: 10px;
     border-radius: 10px;
+    
 }
 #scroll:hover{
     background-color: var(--BUTTON-hover);
